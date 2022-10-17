@@ -1,0 +1,27 @@
+### GET ALL USERS
+
+GET http://localhost:4040/api/users HTTP/1.1
+
+### GET SINGLE USER
+GET http://localhost:4040/api/users/20221017041531 HTTP/1.1
+
+### CREATE USER
+POST http://localhost:4040/api/users HTTP/1.1
+Content-Type: application/json
+{
+        "name":"Avishek",
+        "email": "abc@gmail.com",
+        "phone":"9876543210",
+        "city": "kolkata"
+}
+
+### DELETE USER
+DELETE GET http://localhost:4040/api/users/20221017041531 HTTP/1.1
+
+### UPDATE ITEM
+PUT GET http://localhost:4040/api/users/20221017041531 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Updated name"
+}
